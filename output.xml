@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.5 on win32)" generated="2025-04-08T12:17:36.328678" rpa="false" schemaversion="5">
+<suite id="s1" name="CRMtest" source="C:\Users\Revathy Rangaraju\PycharmProjects\ROBOT_POM\Tests\CRMtest.robot">
+<test id="s1-t1" name="Should Be Able to Launch" line="9">
+<kw name="Sign In" owner="Loginpage_obj">
+<kw name="Open Login Page" owner="Loginpage_obj">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:17:36.625801" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/'.</msg>
+<msg time="2025-04-08T12:17:42.795629" level="WARN">The chromedriver version (133.0.6943.126) detected in PATH at C:\Users\Revathy Rangaraju\AppData\Local\Programs\Python\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-08T12:17:36.624801" elapsed="8.531783"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-08T12:17:45.156584" elapsed="0.000000"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:17:45.156584" level="INFO">Clicking link 'Sign In'.</msg>
+<arg>Sign In</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:17:45.156584" elapsed="2.626922"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-08T12:17:47.783506" elapsed="0.832354"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:17:36.624801" elapsed="11.991059"/>
+</kw>
+<kw name="Input Userid and Password" owner="Loginpage_obj">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:17:48.617305" level="INFO">Typing text 'admin@robotframeworktutorial.com' into text field 'id=email-id'.</msg>
+<arg>id=email-id</arg>
+<arg>${userid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:17:48.617305" elapsed="2.606979"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:17:51.224284" level="INFO">Typing text 'qwe' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:17:51.224284" elapsed="2.542015"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:17:53.766299" level="INFO">Clicking button 'Submit'.</msg>
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:17:53.766299" elapsed="3.375930"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:18:02.143485" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:17:57.142816" elapsed="5.000669"/>
+</kw>
+<arg>admin@robotframeworktutorial.com</arg>
+<arg>qwe</arg>
+<status status="PASS" start="2025-04-08T12:17:48.616946" elapsed="13.526539"/>
+</kw>
+<status status="PASS" start="2025-04-08T12:17:36.623788" elapsed="25.519697"/>
+</kw>
+<kw name="Add New Customer" owner="Customerpage_obj">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:02.143485" level="INFO">Clicking link 'id=new-customer'.</msg>
+<arg>id=new-customer</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:02.143485" elapsed="2.920562"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:05.064047" level="INFO">Typing text 'janedoe@gmail.com' into text field 'id=EmailAddress'.</msg>
+<arg>id=EmailAddress</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:05.064047" elapsed="2.553265"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:07.617312" level="INFO">Typing text 'Shri' into text field 'id=FirstName'.</msg>
+<arg>id=FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:07.617312" elapsed="2.530037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:10.147349" level="INFO">Typing text 'Raam' into text field 'id=LastName'.</msg>
+<arg>id=LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:10.147349" elapsed="2.519201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:12.667791" level="INFO">Typing text 'Dallas' into text field 'id=City'.</msg>
+<arg>id=City</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:12.666550" elapsed="2.523583"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:15.190133" level="INFO">Selecting options from selection list 'id=StateOrRegion' by value TX.</msg>
+<arg>id=StateOrRegion</arg>
+<arg>${state}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-04-08T12:18:15.190133" elapsed="6.606226"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:21.797417" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-04-08T12:18:21.796359" elapsed="2.629974"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-08T12:18:24.426333" level="INFO">Clicking button 'Submit'.</msg>
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-08T12:18:24.426333" elapsed="3.403165"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-08T12:18:47.830027" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-08T12:18:27.829498" elapsed="20.000529"/>
+</kw>
+<arg>janedoe@gmail.com</arg>
+<arg>Shri</arg>
+<arg>Raam</arg>
+<arg>Dallas</arg>
+<arg>TX</arg>
+<arg>male</arg>
+<status status="PASS" start="2025-04-08T12:18:02.143485" elapsed="45.686542"/>
+</kw>
+<tag>1006</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2025-04-08T12:17:36.622788" elapsed="71.207239"/>
+</test>
+<status status="PASS" start="2025-04-08T12:17:36.336553" elapsed="71.496559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">Contacts</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="CRMtest" id="s1" pass="1" fail="0" skip="0">CRMtest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-08T12:17:36.618789" level="ERROR">Error in file 'C:\Users\Revathy Rangaraju\PycharmProjects\ROBOT_POM\Tests\Customerpage_obj.robot' on line 11: Creating keyword '' failed: User keyword name cannot be empty.</msg>
+<msg time="2025-04-08T12:17:42.795629" level="WARN">The chromedriver version (133.0.6943.126) detected in PATH at C:\Users\Revathy Rangaraju\AppData\Local\Programs\Python\Python313\Scripts\chromedriver.exe might not be compatible with the detected chrome version (134.0.6998.178); currently, chromedriver 134.0.6998.165 is recommended for chrome 134.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
