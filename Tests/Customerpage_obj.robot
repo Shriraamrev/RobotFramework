@@ -6,11 +6,12 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 
-#Open Customer Page
+Open Customer Page
     #Open Browser    ${CUSTOMER_URL}    Chrome
     Set Selenium Speed    0.8s
 
 Add New Customer
+    Set Selenium Speed    0.8s
     [Arguments]    ${email}    ${firstname}    ${lastname}    ${city}    ${state}    ${gender}
     Click Link    id=new-customer
     Input Text    id=EmailAddress    ${email}

@@ -9,5 +9,6 @@ Resource    C:/Users/Revathy Rangaraju/PycharmProjects/ROBOT_POM/Tests/Customerp
 Should Be Able to Launch
     [Tags]    1006    Smoke    Contacts
     Loginpage_obj.Sign In
+    Customerpage_obj.Open Customer Page
     Customerpage_obj.Add New Customer    janedoe@gmail.com    Shri    Raam    Dallas    TX    male
 
